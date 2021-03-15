@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %}Meeting: {{meetings.title}}{% endblock %}
+
+{% block content %}
+<h1>{{meetings.title}}</h1>
+<p>
+    This meeting has been scheduled on {{meetings.date}}, at
+    {{meetings.start_time}} in <strong>{{meetings.room}}</strong>
+</p>
+
+Please add a "Home" link to the welcome view here
+Using the <a href="{% url 'welcome' %}">Home</a> template tag.
+
+{% endblock %}
